@@ -265,15 +265,6 @@ Human data → Binary → Signals → Packets → Transmission → Reconstructio
 ---
 
 
-# 🚀 What’s Next
-
- OSI Model (7 layers)
- TCP vs UD
- Routing & Congestion Control
-
----
-
-
 
 
 
