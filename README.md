@@ -1,18 +1,19 @@
-# 🌐 Computer Networks — Deep Learning Repository
+# 🌐 Computer Networks — Learning Repository
 
-This repository documents my structured journey of learning Computer Networks from fundamentals to advanced concepts with a focus on deep understanding and real-world relevance.
+This repository documents my structured journey of learning Computer Networks from basics to advanced concepts with deep understanding and real-world focus.
 
 ---
 
 ## 🚀 About This Repository
 
-This is not just a collection of notes.
+This is not just a collection of notes. It is a structured learning system.
 
 It focuses on:
-- Building strong fundamentals
-- Understanding how networks actually work
-- Learning concepts at a system level
-- Preparing for technical interviews
+- Strong fundamentals
+- System-level understanding of networking
+- Concept clarity (not memorization)
+- Interview preparation (FAANG level)
+- Practical + theoretical balance
 
 ---
 
@@ -20,64 +21,70 @@ It focuses on:
 
 ### 1. Network Fundamentals
 - What is a Computer Network
-- Types of Networks
+- Why networks are needed
+- Types of Networks (LAN, MAN, WAN)
 - End Systems vs Intermediate Systems
 - Communication Links (WiFi, Fiber, Ethernet)
 
-### 2. Data & Signal Transmission
-- Binary Data
-- Electrical & Optical Signals
-- Data Representation
+---
+
+### 2. Data Representation & Transmission
+- Binary data (0s and 1s)
+- Signals (electrical, optical, radio)
+- How data travels physically
+
+---
 
 ### 3. Network Architecture
 - Client-Server Model
-- Peer-to-Peer (P2P) Model
+- Peer-to-Peer Model
+
+---
 
 ### 4. Network Models
 - OSI Model (7 Layers)
 - TCP/IP Model
 
-### 5. Network Devices
-- Routers
-- Switches
-- Hubs
+---
 
-### 6. Protocols & Communication
-- Basics of Protocols
-- How devices communicate
+### 5. Data Transmission Concepts
+- Packets and packet structure
+- Bandwidth vs Speed
+- Latency, congestion, packet loss
+
+---
+
+### 6. Communication Basics
+- Simplex, Half Duplex, Full Duplex
+- Protocols
+- DNS system
 
 ---
 
 ## 🧠 Learning Approach
 
 - Deep conceptual understanding
-- Topic-wise structured notes
-- Simplified explanations
-- Focus on "why" and "how", not just "what"
+- Step-by-step progression
+- Real-world examples
+- Focus on “how and why”
 
 ---
-
 
 ## 🎯 Goal
 
-To build a strong foundation in Computer Networks for:
-- Technical Interviews (FAANG-level preparation)
-- Real-world system understanding
+To build strong Computer Networks knowledge for:
+- Technical Interviews (FAANG-level)
+- Academic excellence
+- Real-world systems understanding
 
 ---
 
-## 📌 Future Plans
+## 📌 Future Additions
 
-- Add diagrams for each concept
-- Include interview questions
-- Add real-world examples
-- Cover advanced topics (Routing, Congestion Control, etc.)
-
----
-
-## 🤝 Contributions
-
-This is a personal learning repository, but suggestions and improvements are always welcome.
+- Diagrams for each concept
+- Interview questions
+- Advanced topics (Routing, TCP congestion control, etc.)
+- Lab-based examples
 
 ---
 
