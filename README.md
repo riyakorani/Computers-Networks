@@ -271,3 +271,6 @@ Human data → Binary → Signals → Packets → Transmission → Reconstructio
 * Routing & Congestion Control
 
 ---
+
+
+
