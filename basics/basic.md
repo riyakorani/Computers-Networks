@@ -265,7 +265,74 @@ Human data → Binary → Signals → Packets → Transmission → Reconstructio
 ---
 
 
+# 🌐 End Systems vs Intermediate Systems (Computer Networks)
 
+## 📌 1. End Systems (End Users / Hosts)
+
+End systems are devices where communication **starts or ends** in a network.
+
+### ✅ Examples:
+- Laptop 💻
+- Smartphone 📱
+- Servers 🌐
+
+### 🔑 Key Points:
+- Send and receive data
+- Run applications (browser, email, etc.)
+- Also called **Hosts**
+
+### 💡 Example:
+When you open a website, your device acts as an **end system**
+
+---
+
+## 📌 2. Intermediate Systems (Network Devices)
+
+Intermediate systems are devices that **forward data between end systems**.
+
+### ✅ Examples:
+- Router
+- Switch
+- Modem
+
+### 🔑 Key Points:
+- Do NOT create or consume data
+- Help in routing and forwarding
+- Act as **traffic controllers** of the network
+
+### 💡 Example:
+Data travels through multiple routers before reaching the destination
+
+---
+
+## 🚚 Analogy
+
+Think of sending a parcel:
+
+- **End Systems** → Sender & Receiver 📦  
+- **Intermediate Systems** → Post offices & delivery centers 🏢  
+
+---
+
+## ⚡ Comparison Table
+
+| Feature            | End Systems            | Intermediate Systems     |
+|------------------|----------------------|--------------------------|
+| Role             | Send/Receive data     | Forward data             |
+| Examples         | Laptop, Phone         | Router, Switch           |
+| Data Usage       | Uses data             | Does not use data        |
+| Also Called      | Hosts                 | Network Devices          |
+
+---
+
+## 🧠 Summary
+
+- End Systems = Communication endpoints  
+- Intermediate Systems = Data forwarding devices  
+
+
+
+---
 
 
 
