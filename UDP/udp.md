@@ -1,182 +1,132 @@
-# 🌐 TCP (Transmission Control Protocol)
+# 🌐 UDP (User Datagram Protocol)
 
 ---
 
 # 🎯 Core Idea
 
-> TCP provides **reliable, ordered, and error-checked delivery** of data between applications.
+> UDP provides **fast, connectionless, best-effort delivery** of data.
 
 ---
 
 # 🧠 Key Principle
 
-TCP is **connection-oriented**
-👉 Data transfer starts **only after connection establishment**
+UDP is **connectionless**
+
+👉 No handshake
+👉 No guarantee of delivery
+👉 No ordering
 
 ---
 
-# 🤝 TCP 3-Way Handshake
+# ⚡ How UDP Works
 
-## Purpose:
-
-* Establish connection
-* Synchronize sequence numbers
-
----
-
-## 🔁 Steps
-
-### 1️⃣ SYN (Synchronize)
-
-Client → Server
-
-* Initiates connection
-* Sends initial sequence number
+* Data is sent directly as **datagrams**
+* No setup phase
+* No tracking of packets
 
 ---
 
-### 2️⃣ SYN-ACK
+# 📦 Data Unit
 
-Server → Client
-
-* Acknowledges request
-* Sends its own sequence number
-
----
-
-### 3️⃣ ACK
-
-Client → Server
-
-* Confirms connection
+| Layer     | Data Unit |
+| --------- | --------- |
+| Transport | Datagram  |
 
 ---
 
-## ✅ Result
+# 🔥 What UDP DOES NOT Provide
 
-Connection established → Data transfer begins
-
----
-
-## 📡 Flow
-
-```text
-Client        Server
-  |   SYN   →   |
-  |  ← SYN-ACK  |
-  |   ACK   →   |
-```
+* ❌ No reliability
+* ❌ No retransmission
+* ❌ No ordering
+* ❌ No flow control
+* ❌ No congestion control
 
 ---
 
-# 📦 Data Transfer (After Handshake)
+# 🚀 What UDP DOES Provide
 
-Data is sent in **segments**
-
----
-
-# 🧠 Core TCP Mechanisms
+* ✅ Very low latency
+* ✅ Minimal overhead
+* ✅ Fast transmission
 
 ---
 
-## 1️⃣ Sequence Numbers
+# 🧠 Real Scenario
 
-* Each segment is numbered
-* Ensures **correct ordering**
+You’re watching a live stream:
 
----
+* Frame 1 lost ❌
+* Frame 2 arrives ✅
 
-## 2️⃣ Acknowledgment (ACK)
+👉 UDP **does NOT resend Frame 1**
 
-Receiver sends:
+Why?
 
-> “Next expected sequence number”
-
-### Example:
-
-Sent: 1, 2, 3
-Received: 1, 2
-
-👉 ACK = 3 (means “send 3 again”)
+👉 Because speed is more important than perfection
 
 ---
 
-## 3️⃣ Retransmission
+# ⚡ UDP vs TCP (Clear Contrast)
 
-* Lost packets are **automatically resent**
-* Triggered by:
-
-  * Timeout
-  * Duplicate ACKs
-
----
-
-## 4️⃣ Flow Control
-
-* Prevents overwhelming receiver
-* Uses **window size**
-
-👉 Sender adjusts speed based on receiver capacity
+| Feature     | TCP             | UDP            |
+| ----------- | --------------- | -------------- |
+| Connection  | Yes (handshake) | No             |
+| Reliability | High            | Low            |
+| Ordering    | Guaranteed      | Not guaranteed |
+| Speed       | Slower          | Faster         |
+| Overhead    | High            | Low            |
 
 ---
 
-## 5️⃣ Congestion Control
+# 📡 Real-World Use Cases
 
-* Prevents network overload
-
-### Behavior:
-
-* Increase speed gradually
-* Reduce speed on congestion
-
----
-
-# ⚠️ Why TCP is Slower
-
-* Connection setup (handshake)
-* Acknowledgments required
-* Error checking overhead
-
-👉 Trade-off: **Speed vs Reliability**
+| Application        | Protocol |
+| ------------------ | -------- |
+| Video streaming    | UDP      |
+| Online gaming      | UDP      |
+| Voice calls (VoIP) | UDP      |
+| DNS queries        | UDP      |
 
 ---
 
-# ⚡ TCP vs UDP
+# 🧠 Mental Model
 
-| Feature     | TCP                 | UDP              |
-| ----------- | ------------------- | ---------------- |
-| Reliability | ✅ Yes               | ❌ No             |
-| Ordering    | ✅ Guaranteed        | ❌ Not guaranteed |
-| Speed       | Slower              | Faster           |
-| Connection  | Connection-oriented | Connectionless   |
+| TCP                             | UDP                                 |
+| ------------------------------- | ----------------------------------- |
+| Courier service (safe, tracked) | Throwing flyers (fast, no tracking) |
 
 ---
 
-# 🧠 Real-World Usage
+# ⚠️ When to Use UDP
 
-| Application               | Protocol     |
-| ------------------------- | ------------ |
-| Web browsing (HTTP/HTTPS) | TCP          |
-| File transfer             | TCP          |
-| Video streaming           | UDP (mostly) |
-| Online gaming             | UDP          |
+Use UDP when:
+
+* Speed is critical
+* Some data loss is acceptable
+* Real-time communication is needed
 
 ---
 
 # 🎯 Key Takeaways
 
-* TCP ensures **reliable and ordered delivery**
-* Uses **handshake before communication**
-* Handles:
+* UDP is **fast but unreliable**
+* No connection setup
+* No guarantees → but minimal delay
+* Used in **real-time systems**
 
-  * Loss (retransmission)
-  * Order (sequence numbers)
-  * Speed (flow + congestion control)
+---
+
+# 🧪 Quick Check
+
+* Why is UDP faster than TCP?
+* What happens if a UDP packet is lost?
+* Why is UDP used in streaming?
 
 ---
 
 # 🚀 Next Step
 
-* TCP Congestion Control (deep dive)
-* UDP internals
-* Real-world protocol mapping (HTTP, HTTPS)
+* Deep TCP vs UDP scenarios
+* When systems choose one over the other
+* Hybrid models (QUIC, HTTP/3)
