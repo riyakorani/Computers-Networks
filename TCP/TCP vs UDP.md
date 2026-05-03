@@ -205,3 +205,6 @@ UDP = latency priority
 Modern systems = **hybrid intelligence**
 
 ---
+
+
+
