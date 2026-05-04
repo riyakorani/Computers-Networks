@@ -106,6 +106,113 @@ Now:
 
 ---
 
+
+# 🌐 What Happens When You Type a URL (DNS + HTTP Flow)
+
+---
+
+# 🚀 STEP-BY-STEP FLOW
+
+---
+
+## 🔹 STEP 1: You Type URL
+
+Example:
+
+```
+www.google.com
+```
+
+👉 Browser starts the process
+
+---
+
+## 🔹 STEP 2: Check Local Cache
+
+Your system checks:
+
+* Browser cache
+* OS cache
+
+👉 If found → skip DNS
+👉 If not → go to DNS
+
+---
+
+## 🔹 STEP 3: DNS Resolution
+
+👉 Goal:
+Convert domain name → IP address
+
+```
+www.google.com → 142.x.x.x
+```
+
+### DNS Hierarchy:
+
+* Root Server
+* TLD Server (.com)
+* Authoritative Server
+
+👉 Final result: IP address returned
+
+---
+
+## 🔹 STEP 4: TCP Connection (3-Way Handshake)
+
+Before sending data, connection is established:
+
+1. SYN
+2. SYN-ACK
+3. ACK
+
+👉 Reliable connection established
+
+---
+
+## 🔹 STEP 5: HTTP Request
+
+Browser sends request using HTTP
+
+Example:
+
+```
+GET / HTTP/1.1
+Host: google.com
+```
+
+---
+
+## 🔹 STEP 6: Server Response
+
+Server responds with:
+
+* HTML
+* CSS
+* JavaScript
+
+---
+
+## 🔹 STEP 7: Browser Rendering
+
+Browser:
+
+* Parses HTML
+* Applies CSS
+* Executes JavaScript
+
+👉 Webpage is displayed 🎉
+
+---
+
+# 🧠 COMPLETE FLOW (ONE LINE)
+
+> URL → DNS → IP → TCP → HTTP → Response → Render
+
+---
+
+
+
 # 📦 TYPES OF DNS SERVERS
 
 ---
