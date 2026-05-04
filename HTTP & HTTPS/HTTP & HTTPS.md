@@ -230,11 +230,11 @@ Client        Server
 
 | Feature     | HTTP     | HTTPS           |
 | ----------- | -------- | --------------- |
-| Security    | ❌ No     | ✅ Yes           |
-| Encryption  | ❌ None   | ✅ TLS           |
-| Port        | 80       | 443             |
+| Security    | ❌ No    | ✅ Yes         |
+| Encryption  | ❌ None  | ✅ TLS         |
+| Port        | 80        | 443            |
 | Speed       | Faster   | Slightly slower |
-| Data Safety | ❌ Unsafe | ✅ Safe          |
+| Data Safety | ❌ Unsafe | ✅ Safe       |
 
 ---
 
