@@ -297,3 +297,152 @@ Client        Server
 ---
 
 
+# 🌐 Network Troubleshooting Scenarios (Interview Guide)
+
+---
+
+# 🎯 SCENARIO 1: Website not opening
+
+User enters a URL but page does not load.
+
+---
+
+## 🧠 Debug Flow (Layer-wise thinking)
+
+### 🔹 Step 1: DNS Check
+
+* Verify domain → IP resolution
+* If DNS fails → issue is in DNS layer
+
+---
+
+### 🔹 Step 2: Network Check
+
+* Check internet connectivity
+* Try pinging an IP
+
+---
+
+### 🔹 Step 3: TCP Check
+
+* Verify connection to port 80/443
+* Check if handshake succeeds
+
+---
+
+### 🔹 Step 4: HTTP/HTTPS Check
+
+* Server reachable?
+* SSL/TLS issue possible
+
+---
+
+## 🎯 Final Answer
+
+> “I debug from DNS → Network → TCP → HTTP layers to identify where the failure occurs.”
+
+---
+
+# 🎯 SCENARIO 2: Internet works but website not opening
+
+---
+
+## 🔍 Possible Causes
+
+* DNS resolution failure
+* Firewall blocking domain
+* Server-side issue
+
+---
+
+## 🎯 Answer
+
+> “If internet works but a specific website fails, I suspect DNS issue or server-side unavailability.”
+
+---
+
+# 🎯 SCENARIO 3: Ping works but browser fails
+
+---
+
+## 🔍 Meaning
+
+* ICMP works (network is fine)
+* TCP/HTTP is failing
+
+---
+
+## 🎯 Answer
+
+> “Network layer is working, but application or transport layer issues like port blocking or HTTP failure exist.”
+
+---
+
+# 🎯 SCENARIO 4: Slow internet
+
+---
+
+## 🔍 Possible Causes
+
+* Network congestion
+* Packet loss
+* High latency routing
+* Server overload
+
+---
+
+## 🎯 Answer
+
+> “Slow internet is usually caused by congestion, packet loss, or inefficient routing.”
+
+---
+
+# 🎯 SCENARIO 5: DNS works but HTTPS fails
+
+---
+
+## 🔍 Possible Causes
+
+* SSL certificate expired
+* TLS handshake failure
+* Port 443 blocked
+
+---
+
+## 🎯 Answer
+
+> “DNS is resolving correctly, but HTTPS fails due to TLS or certificate-related issues.”
+
+---
+
+# 🧠 INTERVIEW DEBUG FRAMEWORK
+
+Always analyze layer-by-layer:
+
+```text
+Application → Transport → Network → Data Link → Physical
+```
+
+---
+
+# 🚀 KEY INTERVIEW SKILL
+
+👉 Don’t guess
+👉 Always isolate layer by layer
+
+---
+
+# 🎯 FINAL INTERVIEW SUMMARY
+
+> “I troubleshoot network issues by systematically checking DNS, network connectivity, TCP handshake, and HTTP/HTTPS layers to isolate the failure point.”
+
+---
+
+# 🔥 WHAT THIS COVERS
+
+✔ Real-world debugging
+✔ OSI application
+✔ DNS/TCP/HTTP integration
+✔ Interview-ready answers
+
+---
