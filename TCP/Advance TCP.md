@@ -133,6 +133,7 @@ Controls how much data can be sent without ACK.
 
 ---
 
+
 ## 🔴 Timeout (Severe Congestion)
 
 - No ACK received
